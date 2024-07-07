@@ -3,11 +3,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f5f5f3; /* Change the color of body*/
 }
-
+/* Change the color of Business name top banner */
 header {
-    background-color: #000;
-    color: #fff;
+    background-color: #080707;
+    color: #ef2727;
     padding: 1em;
 }
 
@@ -59,24 +60,11 @@ nav a {
     margin: 0.5em 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-}
-
-header {
-    background-color: #fff;
-    padding: 1em 0;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
+/* Change the color of Business name */
 header h1 {
     margin: 0;
     font-size: 1.5em;
-    color: #333;
+    color: #9b0a0a;
 }
 
 main {
@@ -114,12 +102,12 @@ main {
 
 .product p {
     font-size: 1em;
-    color: #666;
+    color: #b80808; /* Change the color of Numbers*/
 }
 
 .product button {
     background-color: #333;
-    color: #fff;
+    color: #fff; /* Change the color of add ti cart */
     border: none;
     padding: 0.5em 1em;
     margin: 0.5em;
