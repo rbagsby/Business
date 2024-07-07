@@ -118,3 +118,7 @@ main {
 .product button:hover {
     background-color: #555;
 }
+
+.logo img {
+    max-width: 50px;
+}
