@@ -1,0 +1,12 @@
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:latest
+    container_name: sqlserver
+    environment:
+      ACCEPT_EULA: 'Y'
+      SA_PASSWORD: 'Pr0fessi0nal1!'
+    ports:
+      - "1433:1433"
+    volumes:
+      - /Users/rayshaun/Documents/github/business/static:/media
