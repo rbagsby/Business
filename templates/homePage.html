@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vetspertise</title>
     <link rel="stylesheet" href="/static/homePageStyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">-->
 </head>
 <header>
         <div class="logo">
-            <a href="/"><img src="static/Vetspertise.png"></a>
+            <a href="/"><img src="/static/Vetspertise.png"></a>
         </div>
         <div class="header-content">
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/shop">Shop</a></li>
+                    <li><a href="/templates/shop.html">Shop</a></li>
                    <!-- <li><a href="/products-page">Products</a></li>-->
-                    <li><a href="/about">About</a></li>
+                    <li><a href="/templates/About.html">About</a></li>
                     <!--<li><a href="/search" class="search-icon"><i class="fas fa-search"></i></a></li>-->
                 </ul>
             </nav>
@@ -26,7 +26,6 @@
                 <button type="submit"><i class="fas fa-search"></i></button>
               </div>
         </div>
-        <script src="scripts.js"></script>
     </header>
 <body>
     
@@ -36,7 +35,7 @@
         </div>
         
         <div class="content">
-            <img src="static/blackpwr.jpeg" alt="That's a good guess">
+            <img src="/static/blackpwr.jpeg" alt="That's a good guess">
             <h2>Play, Laugh, Enjoy!</h2>
             <p>Get yours today! </p>
             <!--<iframe width="560" 
@@ -54,50 +53,63 @@
 
     <div class="products-container" id="products"></div>
     
-   <!-- <script>
-        fetch('http://localhost:8080/products')
-            .then(response => response.json())
-            .then(data => {
-                const productsContainer = document.getElementById('products');
-                data.forEach(product => {
-                    const productDiv = document.createElement('div');
-                    productDiv.className = 'product';
-                    productDiv.innerHTML = `
-                        <h2>${product.name}</h2>
-                        <img src="${product.imageurl}" alt="${product.name}">
-                        
-                        <p>$${product.price.toFixed(2)}</p> 
-                        <button>Add to cart</button>
-                        <button>Quick view</button>
-                    `;
-                    productsContainer.appendChild(productDiv);
-                });
-            });
-    </script> -->
         <section class="products-container">
 
             <div class="product">
-                <img src="static/Vetspertise.png" alt="game 1">
+                <img src="/static/Vetspertise.png" alt="game 1">
                 <h2>Vetspertise</h2>
                 <p>$25.00</p>
                 <button>Add to cart</button>
-                <button>Quick view</button>
+                <button id="quick-view-btn">Quick view</button>
+                <div id="quick-view-popup" class="popup">
+                    <div class="popup-content">
+                        <span id="close-btn" class="close-btn">&times;</span>
+                        <h2>Vetspertise</h2>
+                        <p>Product description goes here.</p>
+                        <img src="/static/Vetspertise.png" alt="Product Image">
+                        <p>$25.00</p>
+                    </div>
+                </div>
             </div>
+
+
             <div class="product">
-                <img src="static/image.png" alt="game 2">
+                <img src="/static/image.png" alt="game 2">
                 <h2>Vet Peeves</h2>
                 <p>$25.00</p>
                 <button>Add to cart</button>
-                <button>Quick view</button>
+                <button id="quick-view-btn1">Quick view</button>
+                <div id="quick-view-popup1" class="popup1">
+                    <div class="popup-content1">
+                        <span id="close-btn1" class="close-btn1">&times;</span>
+                        <h2>Vet Peeves</h2>
+                        <p>Product description goes here.</p>
+                        <img src="/static/image.png" alt="Product Image">
+                        <p>$20.00</p>
+                    </div>
+                </div>
             </div>
+
+
             <div class="product">
-                <img src="static/techEdition.png" alt="game 3">
+                <img src="/static/techEdition.png" alt="game 3">
                 <h2>Vetspertise Tech Edition</h2>
                 <p>$25.00</p>
                 <button>Add to cart</button>
-                <button>Quick view</button>
+                <button id="quick-view-btn2">Quick view</button>
+                <div id="quick-view-popup2" class="popup2">
+                    <div class="popup-content">
+                        <span id="close-btn2" class="close-btn2">&times;</span>
+                        <h2>Vetspertise Tech Edition</h2>
+                        <p>Product description goes here.</p>
+                        <img src="/static/techEdition.png" alt="Product Image">
+                        <p>$25.00</p>
+                    </div>
+                </div>
             </div>
 
         </section>
+
+        <script src="/scripts.js"></script>
 </body>
 </html>
