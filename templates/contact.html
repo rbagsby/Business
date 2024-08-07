@@ -21,10 +21,48 @@
                    
             </nav>
         </div>
-        <script src="scripts.js"></script>
     </header>
-<body>
-
+    <body>
+        <header>
+            <h1>Contact Us and Reviews</h1>
+        </header>
     
-</body>
-</html>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    
+        <section id="reviews">
+            <h2>Reviews</h2>
+            <form id="reviewForm">
+                <label for="reviewName">Name:</label>
+                <input type="text" id="reviewName" name="reviewName" required>
+    
+                <label for="reviewMessage">Review:</label>
+                <textarea id="reviewMessage" name="reviewMessage" required></textarea>
+    
+                <button type="submit">Submit Review</button>
+            </form>
+    
+            <div id="reviewsList">
+                <h3>Customer Reviews</h3>
+                <ul id="reviewItems">
+                    <!-- Reviews will be added here dynamically -->
+                </ul>
+            </div>
+        </section>
+    
+        <script src="scripts.js"></script>
+    </body>
+    </html>

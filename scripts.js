@@ -46,3 +46,30 @@ window.onclick = function(event) {
         document.getElementById('quick-view-popup2').style.display = 'none';
     }
 }
+
+
+//contact us functionality
+document.addEventListener("DOMContentLoaded", () => {
+    const contactForm = document.getElementById("contactForm");
+    const reviewForm = document.getElementById("reviewForm");
+    const reviewItems = document.getElementById("reviewItems");
+
+    contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        // Here you can add code to send contact form data to a server or display a thank you message
+        alert("Thank you for contacting us!");
+        contactForm.reset();
+    });
+
+    reviewForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const name = document.getElementById("reviewName").value;
+        const message = document.getElementById("reviewMessage").value;
+
+        const reviewItem = document.createElement("li");
+        reviewItem.innerHTML = `<strong>${name}</strong><p>${message}</p>`;
+        reviewItems.appendChild(reviewItem);
+
+        reviewForm.reset();
+    });
+});
