@@ -319,3 +319,10 @@ button:hover {
 #reviewItems li:last-child {
     border-bottom: none;
 }
+
+.myself img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 1em 0;
+}
